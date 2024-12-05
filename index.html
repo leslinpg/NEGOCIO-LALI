@@ -20,7 +20,15 @@
         position="0 0 0">
       </a-video>
     </a-marker>
-    <a-camera></a-camera>
+    
+    <!-- Configuración de la cámara -->
+    <a-camera 
+      position="0 0 0"   <!-- Posición de la cámara -->
+      fov="80"            <!-- Campo de visión -->
+      near="0.1"          <!-- Distancia mínima -->
+      far="1000"          <!-- Distancia máxima -->
+      look-controls="enabled: false"> <!-- Opcional: Desactiva el control de movimiento -->
+    </a-camera>
   </a-scene>
 </body>
 </html>
